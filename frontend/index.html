@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Management System</h1>
+
+    <!-- Form to add new student -->
+    <form id="studentForm">
+        <input type="text" id="id" placeholder="ID"><br>
+        <input type="text" id="name" placeholder="Name"><br>
+        <input type="text" id="age" placeholder="Age"><br>
+        <input type="text" id="loc" placeholder="Location"><br>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <!-- Table to display student data -->
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Location</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student data will be inserted here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
